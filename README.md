@@ -11,7 +11,7 @@
 Developing practical blue team skills through projects and labs. Interested in threat hunting, log analysis, and security monitoring workflows.
 
 ### Looking For
-- **SOC analyst internships** (2025-2026)
+- **SOC analyst internships** (2026-2027)
 - Open source security projects to contribute to
 - Collaboration on detection engineering or SIEM-related work
 
