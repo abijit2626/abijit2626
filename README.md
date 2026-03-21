@@ -16,7 +16,7 @@ Developing practical blue team skills through projects and labs. Interested in t
 - Collaboration on detection engineering or SIEM-related work
 
 ### Tech Stack
-`Python` `Wazuh SIEM` `Web Security Tools` `Java` `SQLite`
+`Python` `Wazuh SIEM` `Web Security Tools` 
 
 ---
 
