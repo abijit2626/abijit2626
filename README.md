@@ -1,16 +1,23 @@
-## Hi there 👋
+## Hi, I'm Abijit
 
-<!--
-**abijit2626/abijit2626** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Second-year Computer Science student** building cybersecurity skills with a focus on **blue team operations and SOC work**.
 
-Here are some ideas to get you started:
+### What I'm Working On
+- **[keyboard-hook-behavioral-detector](https://github.com/abijit2626/keyboard-hook-behavioral-detector)** — Behavioral analysis tool using keyboard hooks
+- **SIEM deployments & writeups** — Hands-on experience with Wazuh, log analysis, threat detection
+- **Login System with brute force detection** — Java-based authentication system with TOTP 2FA
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Current Focus
+Developing practical blue team skills through projects and labs. Interested in threat hunting, log analysis, and security monitoring workflows.
+
+### Looking For
+- **SOC analyst internships** (2025-2026)
+- Open source security projects to contribute to
+- Collaboration on detection engineering or SIEM-related work
+
+### Tech Stack
+`Python` `Wazuh SIEM` `Web Security Tools` `Java` `SQLite`
+
+---
+
+📫 **Reach me:** [Abijit2626@gmail.com]
