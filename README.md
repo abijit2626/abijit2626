@@ -4,8 +4,8 @@
 
 ### What I'm Working On
 - **[keyboard-hook-behavioral-detector](https://github.com/abijit2626/keyboard-hook-behavioral-detector)** — Behavioral analysis tool using keyboard hooks
-- **SIEM deployments & writeups** — Hands-on experience with Wazuh, log analysis, threat detection
-- **Login System with brute force detection** — Java-based authentication system with TOTP 2FA
+- **[wazuh-investigations](https://github.com/abijit2626/wazuh-investigations)** — SIEM deployments, log analysis, and threat detection writeups
+- **[Login-System-with-brute-force](https://github.com/abijit2626/Login-System-with-brute-force)** — Java-based authentication system with TOTP 2FA and brute force protection
 
 ### Current Focus
 Developing practical blue team skills through projects and labs. Interested in threat hunting, log analysis, and security monitoring workflows.
@@ -20,4 +20,4 @@ Developing practical blue team skills through projects and labs. Interested in t
 
 ---
 
-📫 **Reach me:** [Abijit2626@gmail.com]
+📫 **Reach me:** Abijit2626@gmail.com
