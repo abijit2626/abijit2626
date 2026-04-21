@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <rect width="1280" height="320" fill="#0d1117" rx="0"/>
+  <rect width="1280" height="40" fill="#1c2128"/>
+  <line x1="0" y1="40" x2="1280" y2="40" stroke="#30363d" stroke-width="0.5"/>
+  <circle cx="20" cy="20" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="20" r="6" fill="#febc2e"/>
+  <circle cx="60" cy="20" r="6" fill="#28c840"/>
+  <text x="640" y="26" font-family="Courier New,monospace" font-size="13" fill="#6e7681" text-anchor="middle" letter-spacing="1">abijit@sentinel ~ bash</text>
+  <text x="40" y="80" font-family="Courier New,monospace" font-size="14" fill="#4d9375">abijit@sentinel</text>
+  <text x="178" y="80" font-family="Courier New,monospace" font-size="14" fill="#6e7681">:</text>
+  <text x="186" y="80" font-family="Courier New,monospace" font-size="14" fill="#39d0c4">~</text>
+  <text x="200" y="80" font-family="Courier New,monospace" font-size="14" fill="#6e7681"> $ </text>
+  <text x="230" y="80" font-family="Courier New,monospace" font-size="14" fill="#e6edf3">whoami --verbose</text>
+  <text x="40" y="106" font-family="Courier New,monospace" font-size="14" fill="#6e7681"># ──────────────────────────────────────────────────────</text>
+  <text x="40" y="132" font-family="Courier New,monospace" font-size="14" fill="#79c0ff">  name        </text><text x="185" y="132" font-family="Courier New,monospace" font-size="14" fill="#6e7681">:</text><text x="196" y="132" font-family="Courier New,monospace" font-size="14" fill="#a5d6ff">  Abijit</text>
+  <text x="40" y="158" font-family="Courier New,monospace" font-size="14" fill="#79c0ff">  role        </text><text x="185" y="158" font-family="Courier New,monospace" font-size="14" fill="#6e7681">:</text><text x="196" y="158" font-family="Courier New,monospace" font-size="14" fill="#a5d6ff">  Security Researcher &amp; CS Student</text>
+  <text x="40" y="184" font-family="Courier New,monospace" font-size="14" fill="#79c0ff">  focus       </text><text x="185" y="184" font-family="Courier New,monospace" font-size="14" fill="#6e7681">:</text><text x="196" y="184" font-family="Courier New,monospace" font-size="14" fill="#a5d6ff">  Blue Team  |  SOC  |  Threat Hunting</text>
+  <text x="40" y="210" font-family="Courier New,monospace" font-size="14" fill="#79c0ff">  stack       </text><text x="185" y="210" font-family="Courier New,monospace" font-size="14" fill="#6e7681">:</text><text x="196" y="210" font-family="Courier New,monospace" font-size="14" fill="#a5d6ff">  Python  Wazuh  C++  Windows Internals</text>
+  <text x="40" y="236" font-family="Courier New,monospace" font-size="14" fill="#79c0ff">  collab      </text><text x="185" y="236" font-family="Courier New,monospace" font-size="14" fill="#6e7681">:</text><text x="196" y="236" font-family="Courier New,monospace" font-size="14" fill="#a5d6ff">  ProjectMERCY — SentinelCore EDR</text>
+  <text x="40" y="262" font-family="Courier New,monospace" font-size="14" fill="#79c0ff">  status      </text><text x="185" y="262" font-family="Courier New,monospace" font-size="14" fill="#6e7681">:</text><text x="196" y="262" font-family="Courier New,monospace" font-size="14" fill="#3fb950">  MONITORING</text><text x="316" y="262" font-family="Courier New,monospace" font-size="14" fill="#6e7681"> // </text><text x="346" y="262" font-family="Courier New,monospace" font-size="14" fill="#d29922">internship ready 2026</text>
+  <text x="40" y="288" font-family="Courier New,monospace" font-size="14" fill="#6e7681"># ──────────────────────────────────────────────────────</text>
+  <text x="40" y="310" font-family="Courier New,monospace" font-size="14" fill="#4d9375">abijit@sentinel</text>
+  <text x="178" y="310" font-family="Courier New,monospace" font-size="14" fill="#6e7681">:</text>
+  <text x="186" y="310" font-family="Courier New,monospace" font-size="14" fill="#39d0c4">~</text>
+  <text x="200" y="310" font-family="Courier New,monospace" font-size="14" fill="#6e7681"> $ </text>
+  <rect x="230" y="298" width="9" height="15" fill="#4d9375"/>
+</svg>
