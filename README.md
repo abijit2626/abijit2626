@@ -1,7 +1,6 @@
 ## Hi, I'm Abijit
-
 <p align="center">
-<img src="https://raw.githubusercontent.com/abijit2626/abijit2626/main/banner.svg" alt="Abijit's Banner"/>
+<img src="https://raw.githubusercontent.com/abijit2626/abijit2626/main/banner.svg" alt="Abijit's Banner" width="100%"/>
 </p>
 
 **Second-year Computer Science student** building cybersecurity skills with a focus on **blue team operations and SOC work**.
