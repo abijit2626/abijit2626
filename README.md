@@ -1,5 +1,8 @@
 ## Hi, I'm Abijit
-<img width="540" height="227" alt="6b8b9d3c4c75eaafb73285ddd310a346" src="https://github.com/user-attachments/assets/b987f1f8-57f4-4541-8963-91dbbfae44a0" />
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/abijit2626/abijit2626/main/banner.svg" alt="Abijit's Banner"/>
+</p>
 
 **Second-year Computer Science student** building cybersecurity skills with a focus on **blue team operations and SOC work**.
 
@@ -28,3 +31,4 @@ Developing practical blue team skills through projects and labs. Interested in t
 
 ---
 📫 **Reach me:** Abijit2626@gmail.com
+
