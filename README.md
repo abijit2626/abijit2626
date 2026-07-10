@@ -1,4 +1,4 @@
-h1 align="center">Hi 👋, I'm Abijit</h1>
+<h1 align="center">Hi 👋, I'm Abijit</h1>
 
 <p align="center">
   <b>Second-year Computer Science student</b> building cybersecurity skills with a focus on <b>blue team operations and SOC work</b>.
