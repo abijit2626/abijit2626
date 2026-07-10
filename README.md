@@ -1,54 +1,65 @@
-<h1 align="center">Hi 👋, I'm Abijit</h1>
+<h1 align="center">Abijit</h1>
 
 <p align="center">
-  <b>Second-year Computer Science student</b> building cybersecurity skills with a focus on <b>blue team operations and SOC work</b>.
+  Second-year Computer Science student building cybersecurity skills with a focus on <b>blue team operations and SOC work</b>.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Focus-Blue%20Team%20%26%20SOC-blue" />
-  <img src="https://img.shields.io/badge/Looking%20for-SOC%20Internships%202026--2027-brightgreen" />
+  <img src="https://img.shields.io/badge/focus-blue--team%20%2F%20SOC-000000?style=flat-square" />
+  <img src="https://img.shields.io/badge/status-open%20to%20SOC%20internships%202026--2027-000000?style=flat-square" />
 </p>
 
 ---
 
-### ✅ Completed Projects
+### About
 
-- **[keyboard-hook-behavioral-detector](https://github.com/abijit2626/keyboard-hook-behavioral-detector)** — Behavioral analysis tool using keyboard hooks
-- **[personal-recon-tool](https://github.com/abijit2626/personal-recon-tool)** — Custom reconnaissance tooling
+I'm a second-year CS student focused on the defensive side of security — SIEM operations, log analysis, threat detection, and understanding attacker behavior well enough to catch it. Most of my work right now is split between building small tools that teach me how detection actually works under the hood, and hands-on practice through CTFs and lab environments.
 
-### 🔭 What I'm Working On
+I'm currently looking for SOC analyst internships for 2026–2027, and I'm always interested in contributing to open source security projects or collaborating on detection engineering work.
 
-- **[wazuh-investigations](https://github.com/abijit2626/wazuh-investigations)** — *(writeup in progress)*
-- **[hackerone-ctf-writeups](https://github.com/abijit2626/hackerone-ctf-writeups)** — *(writeup in progress)*
+### Completed Projects
+
+**[keyboard-hook-behavioral-detector](https://github.com/abijit2626/keyboard-hook-behavioral-detector)**
+A behavioral analysis tool that uses low-level keyboard hooks to capture and analyze typing patterns. Built to explore how user behavior can be fingerprinted or flagged as anomalous — a small step toward the kind of endpoint telemetry used in real detection systems.
+
+**[personal-recon-tool](https://github.com/abijit2626/personal-recon-tool)**
+A custom reconnaissance tool built for practicing information-gathering techniques used in security assessments and CTFs.
+
+### In Progress
+
+**[wazuh-investigations](https://github.com/abijit2626/wazuh-investigations)**
+Documenting my hands-on work with Wazuh SIEM — deployment notes, log analysis workflows, and threat detection writeups as I build out detection rules and investigate simulated incidents. Full writeup coming soon.
+
+**[hackerone-ctf-writeups](https://github.com/abijit2626/hackerone-ctf-writeups)**
+Writeups from CTFs and bug bounty practice, covering the vulnerabilities I found and the reasoning behind each exploit. Full writeup coming soon.
 
 <!--
-### 🤝 Collaborations
+### Collaborations
 
-**[ProjectMERCY — SentinelCore EDR](https://github.com/Tushar27-git/ProjectMERCY)** *(co-developer with Tushar)*
+**[ProjectMERCY — SentinelCore EDR](https://github.com/Tushar27-git/ProjectMERCY)** (co-developer with Tushar)
 
 A Windows EDR system with a kernel minifilter driver using WDM callbacks for real-time process, thread, image load, and handle-access telemetry — plus a user-mode agent, AMSI provider, and ML-based threat detection pipeline.
 
 `C++` `C` `Python` `Windows Kernel` `EDR` `AMSI`
 -->
 
-### 🎯 Current Focus
+### Tech Stack
 
-Developing practical blue team skills through projects and labs. Interested in threat hunting, log analysis, and security monitoring workflows.
+| Area | Tools |
+|---|---|
+| Languages | Python, C++ |
+| SIEM / Monitoring | Wazuh SIEM |
+| Systems | Windows Internals |
+| Security | Web Security Tools |
 
-### 📌 Looking For
+### Looking For
 
 - SOC analyst internships (2026–2027)
 - Open source security projects to contribute to
 - Collaboration on detection engineering or SIEM-related work
-- Open to do Ctfs
-
-
-### 🛠️ Tech Stack
-
-`Python` `Wazuh SIEM` `Web Security Tools` `C++` `Windows Internals`
 
 ---
 
 <p align="center">
-  📫 <b>Reach me:</b> Abijit2626@gmail.com
+  Contact: Abijit2626@gmail.com
 </p>
