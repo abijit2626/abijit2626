@@ -1,7 +1,7 @@
 <h1 align="center">Abijit</h1>
 
 <p align="center">
-  Second-year Computer Science student building cybersecurity skills with a focus on <b>blue team operations and SOC work</b>.
+  Third-year Computer Science student building cybersecurity skills with a focus on <b>blue team operations and SOC work</b>.
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 
 ### About
 
-I'm a second-year CS student focused on the defensive side of security — SIEM operations, log analysis, threat detection, and understanding attacker behavior well enough to catch it. Most of my work right now is split between building small tools that teach me how detection actually works under the hood, and hands-on practice through CTFs and lab environments.
+I'm a Third-year CS student focused on the defensive side of security — SIEM operations, log analysis, threat detection, and understanding attacker behavior well enough to catch it. Most of my work right now is split between building small tools that teach me how detection actually works under the hood, and hands-on practice through CTFs and lab environments.
 
 I'm currently looking for SOC analyst internships for 2026–2027, and I'm always interested in contributing to open source security projects or collaborating on detection engineering work.
 
