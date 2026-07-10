@@ -40,6 +40,8 @@ Developing practical blue team skills through projects and labs. Interested in t
 - SOC analyst internships (2026–2027)
 - Open source security projects to contribute to
 - Collaboration on detection engineering or SIEM-related work
+- Open to do Ctfs
+
 
 ### 🛠️ Tech Stack
 
