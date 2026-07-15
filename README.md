@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/focus-blue--team%20%2F%20SOC-000000?style=flat-square" />
-  <img src="https://img.shields.io/badge/status-open%20to%20SOC%20internships%202026--2027-000000?style=flat-square" />
+  <img src="https://img.shields.io/badge/status-open%20to%20SOC%20internships%202027--2028-000000?style=flat-square" />
 </p>
 
 ---
