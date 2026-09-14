@@ -1,4 +1,4 @@
-<h1 align="center">Abijit</h1>
+﻿<h1 align="center">Abijit</h1>
 
 <p align="center">
   Third-year Computer Science student building cybersecurity skills with a focus on <b>blue team operations and SOC work</b>.
@@ -32,6 +32,14 @@ Documenting my hands-on work with Wazuh SIEM — deployment notes, log analysis 
 
 **[hackerone-ctf-writeups](https://github.com/abijit2626/hackerone-ctf-writeups)**
 Writeups from CTFs and bug bounty practice, covering the vulnerabilities I found and the reasoning behind each exploit. Full writeup coming soon.
+
+### Planned Next
+
+**Detection-as-Code Pipeline**
+Turning the Wazuh lab into a versioned, CI-validated detection engineering pipeline — Atomic Red Team attack simulation, Sigma rules, and automated pass/fail testing instead of manually re-checking each rule by hand.
+
+**AI Agent Behavior Monitor**
+Investigating whether current endpoint telemetry can actually distinguish autonomous AI agent activity from human-driven attacks or traditional malware — extending the behavioral detection work above into agentic AI security.
 
 <!--
 ### Collaborations
