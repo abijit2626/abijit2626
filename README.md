@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/focus-blue--team%20%2F%20SOC-000000?style=flat-square" />
-  <img src="https://img.shields.io/badge/status-open%20to%20SOC%20internships%202027--2028-000000?style=flat-square" />
+  <img src="https://img.shields.io/badge/status-open%20to%20SOC%20placements%202027--2028-000000?style=flat-square" />
 </p>
 
 ---
@@ -15,7 +15,7 @@
 
 I'm a Third-year CS student focused on the defensive side of security — SIEM operations, log analysis, threat detection, and understanding attacker behavior well enough to catch it. Most of my work right now is split between building small tools that teach me how detection actually works under the hood, and hands-on practice through CTFs and lab environments.
 
-I'm currently looking for SOC analyst internships for 2026–2027, and I'm always interested in contributing to open source security projects or collaborating on detection engineering work.
+I'm currently looking for SOC analyst roles through final-year placements (2027–2028), and I'm always interested in contributing to open source security projects or collaborating on detection engineering work.
 
 ### Completed Projects
 
@@ -62,7 +62,7 @@ A Windows EDR system with a kernel minifilter driver using WDM callbacks for rea
 
 ### Looking For
 
-- SOC analyst internships (2026–2027)
+- SOC analyst roles via final-year placements (2027–2028)
 - Open source security projects to contribute to
 - Collaboration on detection engineering or SIEM-related work
 
