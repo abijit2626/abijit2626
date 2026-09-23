@@ -65,7 +65,7 @@ A SOC home lab with both sides of the fight in one repo.
 
 `simulation/` is a stateful adversary telemetry generator, not a random log spammer. It tracks which users and hosts are already compromised and emits chronologically coherent, MITRE-mapped events — T1110.001 brute force leading into T1003.001 LSASS dumping — as ndjson written straight into Wazuh ingestion.
 
-`investigations/` is what I found when I pointed Wazuh at it: alert triage, false-positive root cause analysis, and the detections that *didn't* fire — scheduled tasks, PowerShell execution — along with the custom rules written to close those gaps.
+`investigations/` is what I found when I pointed Wazuh at it: alert triage, false-positive root cause analysis, and the detections that *didn't* fire — scheduled task creation, suspicious PowerShell, plaintext credentials on the command line — each written up with its root cause, its impact, and the rule needed to close it.
 
 **[ctf-workshop](https://github.com/abijit2626/ctf-workshop)** · `Python` `Flask` `Docker`
 
@@ -92,7 +92,7 @@ A Windows EDR built around a kernel minifilter driver, using WDM callbacks for r
 | Area | Tools |
 |---|---|
 | Languages | Python, Bash, C++, Java |
-| Detection & SIEM | Wazuh, Sysmon, MITRE ATT&CK, custom rules, correlation engines |
+| Detection & SIEM | Wazuh, Sysmon, MITRE ATT&CK, detection gap analysis, correlation engines |
 | Windows & endpoint | PE format analysis, import-table fingerprinting, Windows internals, process telemetry |
 | Offensive, for defensive ends | nmap, Burp, service enumeration, web exploitation, steganography |
 | Build & infra | Docker, Flask, scikit-learn, SQLite, Git |
