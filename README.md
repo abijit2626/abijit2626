@@ -35,6 +35,14 @@ Rules I keep arriving at independently, across unrelated projects:
 
 ### Selected work
 
+**[ambit](https://github.com/abijit2626/ambit)** · `Go` `Wazuh` `MCP`
+
+A provenance and control plane for Claude Code agents and the MCP servers they connect to, built in direct response to documented attacks: **s1ngularity** (malicious npm packages that re-invoked installed AI CLIs with permission-bypass flags to exfiltrate credentials) and **GTG-1002** (a state-linked actor that decomposed an espionage campaign into thousands of individually-innocuous agent subtasks).
+
+Split deliberately by latency. `ambitd` runs on each endpoint and holds everything needing a live, sub-millisecond verdict — Rule-of-Two bit accounting, provenance fingerprinting, the allow/deny/ask gate. Wazuh is the fleet plane: correlation, retention, alerting, and enrollment, instead of reimplementing a SIEM from scratch — and it never sits in the synchronous path, so it can't block a tool call.
+
+M0, the observation layer, is complete and tested: every hook response is `{}`, so no session behaves differently for its presence — deliberate, because you can't measure a baseline from a system that's already changing behaviour. Not yet deployed to a cohort; later milestones are design only.
+
 **[keyboard-hook-behavioral-detector](https://github.com/abijit2626/keyboard-hook-behavioral-detector)** · `Python` `Windows` `scikit-learn`
 
 A behavioural monitor that finds processes *capable* of keylogging and scores how suspicious they look over time. It never hooks the keyboard, captures keystrokes, or injects code — it's the detector, not the thing being detected.
@@ -79,19 +87,11 @@ It self-tests: 38 automated checks validate all 18 flags at startup, and it refu
 
 Solved-and-explained writeups from Hacker101 — Micro-CMS v1 and v2, A Little Something to Get You Started, and Encrypted Pastebin. The padding oracle work from that last one fed straight back into the study jam above, which now runs a live instructor demo of the attack.
 
-**[ProjectMERCY — SentinelCore EDR](https://github.com/Tushar27-git/ProjectMERCY)** · co-developer with [Tushar](https://github.com/Tushar27-git)
-
-A Windows EDR built around a kernel minifilter driver, using WDM callbacks for real-time process, thread, image-load, and handle-access telemetry — plus a user-mode agent, an AMSI provider, and an ML-based threat detection pipeline. The kernel-level counterpart to the user-mode telemetry work above.
-
-`C++` `C` `Python` `Windows Kernel` `EDR` `AMSI`
-
----
-
 ### Tech
 
 | Area | Tools |
 |---|---|
-| Languages | Python, Bash, C++, Java |
+| Languages | Python, Bash, Go, C++, Java |
 | Detection & SIEM | Wazuh, Sysmon, MITRE ATT&CK, detection gap analysis, correlation engines |
 | Windows & endpoint | PE format analysis, import-table fingerprinting, Windows internals, process telemetry |
 | Offensive, for defensive ends | nmap, Burp, service enumeration, web exploitation, steganography |
@@ -100,7 +100,7 @@ A Windows EDR built around a kernel minifilter driver, using WDM callbacks for r
 ### Currently
 
 - Extending the Wazuh lab into a **detection-as-code pipeline** — Sigma rules, Atomic Red Team simulation, and CI-validated pass/fail instead of re-checking every rule by hand
-- Investigating whether today's endpoint telemetry can actually distinguish **autonomous AI agent activity** from human-driven attacks or conventional malware
+- Building [ambit](https://github.com/abijit2626/ambit) toward an answer to the same question: whether current telemetry can actually tell autonomous AI agent activity apart from a human-driven attack
 - Running the TinkerHub security study jam
 
 ### Looking for
