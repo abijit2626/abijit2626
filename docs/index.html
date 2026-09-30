@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abijit — Detection Engineering &amp; SOC</title>
+<meta name="description" content="Third-year CS student working the defensive side of security: detection engineering, SIEM operations and endpoint telemetry.">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--fg:#e6edf3;--mute:#8b949e;--a:#39d0c4;--b:#79c0ff}
+@media (prefers-color-scheme:light){:root{--bg:#fff;--card:#f6f8fa;--line:#d0d7de;--fg:#1f2328;--mute:#59636e;--a:#0a7f76;--b:#0969da}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--b);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:20px;align-items:center;height:52px;font-size:14px}
+nav b{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--a);margin-right:auto}
+nav a{color:var(--mute)}nav a:hover{color:var(--fg);text-decoration:none}
+header{padding:72px 0 40px}
+h1{font-size:clamp(2rem,6vw,3rem);line-height:1.15;margin:0 0 12px;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.q{font-style:italic;color:var(--mute);font-size:1.1rem;margin:0 0 24px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px;padding:0;list-style:none}
+.tags li,.chip{font:12px ui-monospace,Menlo,Consolas,monospace;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--mute)}
+.btn{display:inline-block;border:1px solid var(--line);background:var(--card);color:var(--fg);padding:8px 16px;border-radius:8px;font-size:14px;margin:0 8px 8px 0}
+.btn:hover{border-color:var(--a);text-decoration:none}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font-size:1.4rem;margin:0 0 20px}
+h2::before{content:"# ";color:var(--a);font-family:ui-monospace,monospace}
+.rules{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+@media(max-width:420px){.rules{grid-template-columns:1fr}}
+.rules div,.proj{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.rules strong{display:block;margin-bottom:4px}
+.rules span{color:var(--mute);font-size:15px}
+.projs{display:grid;gap:16px}
+.proj h3{margin:0 0 6px;font-size:1.1rem}
+.proj p{margin:8px 0;color:var(--mute);font-size:15px}
+.proj .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.proj:hover{border-color:var(--a)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td,th{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mute);font-weight:500;width:32%}
+ul{padding-left:20px;color:var(--mute)}li{margin:6px 0}
+footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>abijit@sentinel</b><a href="#about">About</a><a href="#work">Work</a><a href="#tech">Tech</a><a href="#contact">Contact</a></div></nav>
+
+<main class="wrap">
+<header>
+  <h1>Detection engineering, blue team, SOC.</h1>
+  <p class="q">How do you know something bad is happening — and how do you prove it wasn't just noise?</p>
+  <ul class="tags">
+    <li>focus: detection engineering / SOC</li>
+    <li>open to: SOC placements 2027–2028</li>
+    <li>CTFs: Hacker101 · HTB</li>
+  </ul>
+  <a class="btn" href="#work">See my work</a>
+  <a class="btn" href="https://github.com/abijit2626">GitHub</a>
+  <a class="btn" href="mailto:Abijit2626@gmail.com">Email me</a>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I'm a third-year CS student working the defensive side of security — detection engineering, SIEM operations and endpoint telemetry.</p>
+  <p>I build small systems that force me to learn how detection actually works underneath the dashboard: what counts as a signal, when it's allowed to fire, and why most of them shouldn't. Several of my projects are independent attempts at the same hard problem — separating real attacker behaviour from the enormous amount of ordinary software that merely looks suspicious.</p>
+  <p>Outside of that: CTFs, a Wazuh home lab, and running a security study jam for students at my college who have never touched this before.</p>
+
+  <h2 style="margin-top:36px">How I think about detection</h2>
+  <div class="rules">
+    <div><strong>Capability is not intent.</strong><span>Plenty of trusted software installs keyboard hooks, opens raw sockets, reads the clipboard. Flagging capability alone builds a tool analysts learn to ignore.</span></div>
+    <div><strong>Persistence amplifies risk.</strong><span>A single observation is a data point. Behaviour that survives over time is a signal.</span></div>
+    <div><strong>Every signal explains itself.</strong><span>If I can't say why something scored what it did, nobody can triage it. A model score only amplifies a rule that already fired.</span></div>
+    <div><strong>Correlation beats volume.</strong><span>One high-confidence incident from a complete attack chain is worth more than a thousand isolated alerts.</span></div>
+  </div>
+</section>
+
+<section id="work">
+  <h2>Selected work</h2>
+  <div class="projs">
+
+    <article class="proj">
+      <h3><a href="https://github.com/abijit2626/ambit">ambit</a></h3>
+      <p>A provenance and control plane for Claude Code agents and the MCP servers they connect to, built in response to documented attacks: <b>s1ngularity</b> (malicious npm packages re-invoking installed AI CLIs to exfiltrate credentials) and <b>GTG-1002</b> (an espionage campaign decomposed into thousands of innocuous agent subtasks).</p>
+      <p>An endpoint daemon holds everything needing a live, sub-millisecond verdict; Wazuh is the fleet plane for correlation and alerting and never sits in the synchronous path. M0, the observation layer, is complete and tested; later milestones are design only.</p>
+      <div class="chips"><span class="chip">Go</span><span class="chip">Wazuh</span><span class="chip">MCP</span></div>
+    </article>
+
+    <article class="proj">
+      <h3><a href="https://github.com/abijit2626/keyboard-hook-behavioral-detector">keyboard-hook-behavioral-detector</a></h3>
+      <p>Finds processes <i>capable</i> of keylogging and scores how suspicious they look over time. It never hooks the keyboard or captures keystrokes — it's the detector, not the thing detected.</p>
+      <p>Three gated signal layers: a rule engine with temporal persistence and risk decay; a RandomForest trained on ClaMP (5,210 labelled Windows executables, 67 PE-header features); and an import-table fingerprint mapped to MITRE ATT&amp;CK. ML can only amplify a rule-based trigger, never create one.</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Windows</span><span class="chip">scikit-learn</span></div>
+    </article>
+
+    <article class="proj">
+      <h3><a href="https://github.com/abijit2626/SIEM-Project">SIEM-Project — Attack Chain SIEM</a></h3>
+      <p>A stateful correlation engine that raises an incident only when a full chain appears in order inside a time window: access anomaly → C2 beacon → objective behaviour.</p>
+      <p>Beacons are found by interval-variance analysis rather than ML, so every flag can be walked through by hand. Tests assert the negative cases as hard as the positive ones — restraint is the point.</p>
+      <div class="chips"><span class="chip">Python (stdlib only)</span></div>
+    </article>
+
+    <article class="proj">
+      <h3><a href="https://github.com/abijit2626/wazuh-investigations">wazuh-investigations</a></h3>
+      <p>A SOC home lab with both sides in one repo: a stateful, MITRE-mapped adversary telemetry generator (T1110.001 brute force into T1003.001 LSASS dumping), and the investigations from pointing Wazuh at it — alert triage, false-positive root causes, and the detections that <i>didn't</i> fire, each with the rule needed to close the gap.</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Wazuh</span><span class="chip">Sysmon</span></div>
+    </article>
+
+    <article class="proj">
+      <h3><a href="https://github.com/abijit2626/personal-recon-tool">personal-recon-tool — Ghost</a></h3>
+      <p>A modular recon framework for CTFs, HTB and authorised engagements: ten pipeline stages from port scan to SSL/TLS to screenshots, ending in a self-contained HTML report. Tools are probed before use, every command runs under a timeout, and output never overwrites.</p>
+      <div class="chips"><span class="chip">Bash</span></div>
+    </article>
+
+    <article class="proj">
+      <h3><a href="https://github.com/abijit2626/ctf-workshop">ctf-workshop</a></h3>
+      <p>An 18-challenge, one-day CTF I built and run for the TinkerHub study jam for students with no security background. Three rounds, fully offline, Dockerised behind one command, with progressive hints on every challenge. 38 automated checks validate all flags at startup.</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Docker</span></div>
+    </article>
+
+    <article class="proj">
+      <h3><a href="https://github.com/abijit2626/hackerone-ctf-writeups">hackerone-ctf-writeups</a></h3>
+      <p>Solved-and-explained Hacker101 writeups: Micro-CMS v1 and v2, A Little Something to Get You Started, and Encrypted Pastebin. The padding-oracle work fed straight into a live instructor demo at the study jam.</p>
+    </article>
+  </div>
+</section>
+
+<section id="tech">
+  <h2>Tech</h2>
+  <table>
+    <tr><th>Languages</th><td>Python, Bash, Go, C++, Java</td></tr>
+    <tr><th>Detection &amp; SIEM</th><td>Wazuh, Sysmon, MITRE ATT&amp;CK, detection gap analysis, correlation engines</td></tr>
+    <tr><th>Windows &amp; endpoint</th><td>PE format analysis, import-table fingerprinting, Windows internals, process telemetry</td></tr>
+    <tr><th>Offensive, for defensive ends</th><td>nmap, Burp, service enumeration, web exploitation, steganography</td></tr>
+    <tr><th>Build &amp; infra</th><td>Docker, Flask, scikit-learn, SQLite, Git</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Currently</h2>
+  <ul>
+    <li>Extending the Wazuh lab into a detection-as-code pipeline — Sigma rules, Atomic Red Team simulation, CI-validated pass/fail.</li>
+    <li>Building ambit toward an answer to whether current telemetry can tell autonomous AI agent activity apart from a human-driven attack.</li>
+    <li>Running the TinkerHub security study jam.</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Looking for</h2>
+  <ul>
+    <li>SOC analyst and detection engineering roles through final-year placements (2027–2028)</li>
+    <li>Open source security projects to contribute to</li>
+    <li>Anyone working on detection engineering, SIEM tuning or endpoint telemetry who wants a second pair of eyes</li>
+  </ul>
+  <a class="btn" href="mailto:Abijit2626@gmail.com">Abijit2626@gmail.com</a>
+  <a class="btn" href="https://github.com/abijit2626">github.com/abijit2626</a>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Abijit</div></footer>
+</body>
+</html>
