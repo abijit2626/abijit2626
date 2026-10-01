@@ -35,7 +35,7 @@ Rules I keep arriving at independently, across unrelated projects:
 
 ### Selected work
 
-**[ambit](https://github.com/abijit2626/ambit)** · `Go` `Wazuh` `MCP`
+**[Ambit](https://github.com/abijit2626/Ambit)** · `Go` `Wazuh` `MCP`
 
 A provenance and control plane for Claude Code agents and the MCP servers they connect to, built in direct response to documented attacks: **s1ngularity** (malicious npm packages that re-invoked installed AI CLIs with permission-bypass flags to exfiltrate credentials) and **GTG-1002** (a state-linked actor that decomposed an espionage campaign into thousands of individually-innocuous agent subtasks).
 
@@ -100,7 +100,7 @@ Solved-and-explained writeups from Hacker101 — Micro-CMS v1 and v2, A Little S
 ### Currently
 
 - Extending the Wazuh lab into a **detection-as-code pipeline** — Sigma rules, Atomic Red Team simulation, and CI-validated pass/fail instead of re-checking every rule by hand
-- Building [ambit](https://github.com/abijit2626/ambit) toward an answer to the same question: whether current telemetry can actually tell autonomous AI agent activity apart from a human-driven attack
+- Building [Ambit](https://github.com/abijit2626/Ambit) toward an answer to the same question: whether current telemetry can actually tell autonomous AI agent activity apart from a human-driven attack
 - Running the TinkerHub security study jam
 
 ### Looking for
